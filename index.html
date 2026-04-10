@@ -250,6 +250,8 @@
                 </div>
                 <div class="timeline-body px-4 pb-4">
                   <div class="text-muted text-small mb-3">November, 2025 - Present</div>
+                  <h6><b>Transaction Monitoring & Data Ingestion Platform</b></h6>
+                  <i>Spring Boot | Kafka | ScyllaDB | OpenSearch | Redis | GCS</i>
                   <ul>
                     <li>Built a horizontally scalable batch ingestion pipeline processing up to 1 million transactions
                       (~200MB) in under 5 minutes using GCS signed URLs, multi-threaded stream processing, and dynamic
@@ -273,24 +275,70 @@
                 </div>
                 <div class="timeline-body px-4 pb-4">
                   <div class="text-muted text-small mb-3">December, 2022 - September, 2025</div>
+
+                  <h6><b>Middleware Platform</b></h6>
+                  <i>Spring Boot | Spring Security | PostgreSQL | MongoDB | Redis | Nginx | Docker | CQRS |
+                    Microservices</i>
                   <ul>
-                    <li>Built scalable middleware for third-party integrations with Nth Rewards using Java Spring Boot,
-                      PostgreSQL, Redis, and CQRS, handling 200-600 TPS during peak seasons.</li>
-                    <li>Integrated Twidpay with Nth Rewards via middleware, enabling customers to redeem loyalty points
-                      directly on merchant apps.</li>
-                    <li>Connected PineLabs APIs to Nth Rewards via middleware for real-time voucher generation based on
-                      customer-selected denominations.</li>
-                    <li>Integrated Customer Capital with SSO login for seamless access to flight and hotel booking
-                      options.</li>
-                    <li>Created a React.js application to manage middleware transactions, partners, and users.</li>
-                    <li>Implemented multi-factor authentication (MFA) for secure two-step login authentication.</li>
-                    <li>Integrated RSAS (RuPay Scan and Score) with Nth Rewards for voucher distribution and rewards
-                      processing using Spring Boot, Redis, and PostgreSQL.</li>
-                    <li>Developed live vehicle location APIs with Kafka for real-time location segregation.</li>
-                    <li>Secured and optimized server-side logic with Spring Security.</li>
-                    <li>Improved performance with Redis caching and microservices architecture.</li>
-                    <li>Ensured code quality by adhering to checkmark standards.</li>
-                    <li>Deployed projects using Docker and set up server clusters with Docker Swarm.</li>
+                    <li>Built scalable middleware for third-party integrations (Twidpay, Pine Labs, Customer Capital)
+                      with Nth Rewards, handling 200–600 TPS during peak load.</li>
+
+                    <li>Integrated Twidpay enabling customers to redeem loyalty points directly within merchant
+                      applications.</li>
+
+                    <li>Connected Pine Labs APIs for real-time voucher generation based on customer-selected
+                      denominations.</li>
+
+                    <li>Implemented SSO authentication for Customer Capital, enabling seamless access to travel booking
+                      services.</li>
+
+                    <li>Secured backend services using Spring Security and improved performance with Redis caching.</li>
+
+                    <li>Deployed microservices using Docker and configured Docker Swarm clusters for high availability.
+                    </li>
+                  </ul>
+
+                  <h6><b>Middleware Matrix (Internal Admin Dashboard)</b></h6>
+                  <i>React.js | Docker | Multi-Factor Authentication</i>
+                  <ul>
+                    <li>Built a React.js admin application to manage middleware transactions, partner configurations,
+                      and user accounts.</li>
+                    <li>Implemented multi-factor authentication (MFA) for secure two-step login, strengthening access
+                      control.</li>
+                  </ul>
+
+                  <h6><b>RSAS – RuPay Scan & Score</b></h6>
+                  <i>Spring Boot | PostgreSQL | Redis</i>
+                  <ul>
+                    <li>Integrated RSAS with Nth Rewards for voucher distribution and rewards processing; chatbot was
+                      showcased at the <b>Global Fintech Fest</b>.</li>
+                    <li>Designed RESTful APIs for data retrieval, improving system performance and aligning with
+                      operational SLAs.</li>
+                  </ul>
+
+                  <h6><b>GNSS - Global Navigation Satellite System</b></h6>
+                  <i>Spring Boot | Kafka | WebSocket</i>
+                  <ul>
+                    <li>Contributed to GNSS project, independently developing 3 end-to-end modules: a location ingestion
+                      API collecting 500–800 live location events/sec from vendors including MapMyIndia, and a
+                      segregation
+                      service routing locations into service road, toll road and non-toll road Kafka topics based on
+                      predefined
+                      coordinates.
+                    </li>
+
+                    <li>Developed a WebSocket streaming service consuming all 3 Kafka topics and delivering live vehicle
+                      locations to a frontend map in real time.
+                    </li>
+
+                    <li>Toll road location data integrated with NETC FASTag system for automatic toll deduction upon
+                      vehicle detection.
+                    </li>
+
+                    <li>Secured all APIs using Spring Security and Dockerised all 3 modules for deployment.
+                    </li>
+
+                    <li>Tracked 2,000+ vehicles on Delhi–Jaipur highway during pilot program.</li>
                   </ul>
                 </div>
               </div>
@@ -407,8 +455,10 @@
         <div class="achievement-section">
           <h2 class="h2 fw-light mb-4">Accomplishments</h2>
           <ul>
-            <li>WellDone award for developing and deploying middleware from scratch.</li>
-            <li>RuPay Scan and Score chatbot was launched and displayed in the "GLOBAL FINTECH FEST".</li>
+            <li>Received the "Well Done" award at NPCI for independently developing and deploying the middleware
+              platform from scratch.</li>
+            <li>RuPay Scan and Score chatbot was selected for display at the Global Fintech Fest, a flagship national
+              fintech event.</li>
           </ul>
         </div>
       </div>
